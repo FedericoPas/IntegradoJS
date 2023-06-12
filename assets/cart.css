@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Allerta Stencil', sans-serif;
+    ;
+}
+:root {
+    --primary:#f5f4f1;
+    --secondary:#283339;
+    --terteary: rgb(241, 241, 241);
+    --background-header: #011825;
+  
+
+}
+
+.header {
+background-color: var(--background-header);
+}

@@ -1,0 +1,166 @@
+
+
+/* ......Variables..... */
+
+:root{
+  --primary:#f5f4f1;
+  --secondary:#283339;
+  --terteary: rgb(241, 241, 241);
+  --background-header: #011825;
+  
+    
+}
+
+/* ......Estilos...... */
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+
+
+
+/* ......HEADER...... */
+
+header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color:var(--background-header);
+    justify-content: space-between;
+    padding: 10px;
+    color: var(--withe);
+    gap: 30px;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    
+}
+ 
+/* ......MAIN...... */
+body{
+  height: 100vh;
+  width: auto;
+}
+main{
+  height: 100%;
+}
+
+/* ......Register...... */
+
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--terteary);
+    padding-bottom: 20px;
+    padding-top: 85px;
+    height:100%;
+}
+form{
+    padding-top: 10px;
+}
+.register h2{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    color: var(--secondary);
+}
+.group        { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+.input         {
+  font-size:18px;
+  color: var(--primary);
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #f3f3f3;
+  background-color: var(--secondary);
+}
+.input:focus     { outline:none; }
+
+label          {
+  color:var(--primary); 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.input:focus ~ label, .input:valid ~ label    {
+  top:-20px;
+  font-size:14px;
+  color:var(--background-header);
+}
+
+.bar  { position:relative; display:block; width:300px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:var(--background-header); 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+.input:focus ~ .bar:before, .input:focus ~ .bar:after {
+  width:50%;
+}
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+.input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+@-webkit-keyframes inputHighlighter {
+  from { background:var(--redlogo); }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:var(--redlogo); }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:var(--redlogo); }
+  to  { width:0; background:transparent; }
+}
+.button{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    color: var(--primary);
+    background-color: var(--background-header);
+    border-radius: 4px;
+}
+.button:hover{
+    cursor: pointer;
+}
