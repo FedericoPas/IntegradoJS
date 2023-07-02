@@ -1,35 +1,58 @@
-@media (max-width: 1020px){
+@media (max-width: 1020px) {
     .img-logo-empresa {
         width: 120px;
     }
+
     .search input {
         width: 300px;
         height: 28px;
         font-size: 16px;
     }
+
     .user {
         gap: 20px;
     }
+
+    .hero {
+        top: 120px;
+        left: 2px;
+        right: 2px;
+    }
+
+    .hero .text {
+        width: 99%;
+    }
+
     #headerlupa {
         font-size: 20px;
         color: var(--secondary);
     }
+
     .user .material-symbols-outlined {
         font-size: 30px;
     }
+
     .header-nav ul {
         gap: 30px;
         font-size: 15px;
     }
 
+    .slideshow-container {
+        width: 97vw;
+    }
 
 
-
+    
     .main h2 {
         font-size: 25px;
     }
+
     .card {
-        width: 200px;
+        width: 190px;
+    }
+
+    .card img {
+        width: 160px;
     }
 
 
@@ -40,6 +63,7 @@
     .aboutUS h2 {
         font-size: 25px;
     }
+
     .about img {
         width: 50px;
     }
@@ -51,21 +75,25 @@
 }
 
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
     .header-principal {
         justify-content: space-around;
         border-bottom: 0px;
     }
+
     .menu-burger span {
         display: flex;
         color: var(--primary);
     }
+
     .nav-burger {
         display: block;
     }
+
     .img-logo-empresa {
         width: 100px;
     }
+
     .search {
         display: none;
     }
@@ -73,42 +101,70 @@
     .user {
         gap: 10px;
     }
-    .user p{
+
+    .user p {
         font-size: 13px;
     }
+
     .user .material-symbols-outlined {
         font-size: 25px;
     }
-    .header-nav  {
+
+    .header-nav {
         display: none;
     }
 
 
+    .hero {
+        top: 75px;
+        left: 2px;
+        right: 2px;
+    }
+
+    .hero .text {
+        width: 98%;
+    }
+
+    .slideshow-container {
+        width: 95vw;
+    }
+
     .slideshow-container img {
         height: 350px;
     }
+
     .text {
         font-size: 15px;
     }
 
 
+
     .main {
-        padding-top: 60px;
+        padding-top: 400px;
     }
+
+    .cards-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .categories {
         gap: 10px;
         flex-wrap: wrap;
     }
+
     .categories button {
         width: 85px;
         height: 30px;
         font-size: 12px;
     }
+
     .main h2 {
         font-size: 23px;
     }
+
     .card {
-        width: 200px;
+        width: 180px;
     }
 
 
@@ -119,6 +175,7 @@
     .aboutUS h2 {
         font-size: 23px;
     }
+
     .about img {
         width: 40px;
     }
@@ -130,5 +187,19 @@
         flex-wrap: wrap;
         text-align: center;
     }
-    
+
+}
+
+@media (max-width: 471px) {
+    .slideshow-container {
+        width: 90vw;
+    }
+    .hero .text {
+        width: 96%;
+    }
+    .hero {
+        top: 75px;
+        left: 2px;
+        right: 2px;
+    }
 }

@@ -14,6 +14,7 @@
 </head>
 <body>
 
+    
     <section class="header">
         <div class="header-principal">
 
@@ -41,18 +42,21 @@
                 </span>
             </div>
             <div class="user">
-                <a href="./pages/intermedio.html">
-                    <span class="material-symbols-outlined">
-                        account_circle
-                        <p>Usuario</p>
-                    </span>
-                </a>
-                <a  class="cart-label" href="./pages/cart.html">
-                    <span class="material-symbols-outlined">
+                    <a href="./pages/intermedio.html">                   
+                         <span class="material-symbols-outlined">
+                            account_circle
+                            <p>Usuario</p>
+                        </span>
+                    </a>
+
+                
+                
+                    <span class="material-symbols-outlined cart-label">
                         shopping_cart
+                        <span class="cart-bubble"></span>
                         <p>Tu Carrito</p>
                     </span>
-                </a>
+               
                 
             </div>
         </div>
@@ -65,13 +69,44 @@
                 <li><a href="">Trabaja con nosotros</a> </li>
             </ul>
         </div>
-         
+
 
 
     </section>
 
-    <section class="hero">
+    <section class="cart-menu">
+        <h2>TUS PRODUCTOS</h2>
+        <div class="cart-products">
+            <!-- <div class="cart">
+                <h2>Proddcto</h2>
+                <p>precio</p>
+                <div>
+                    <button>
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+                    <span>213</span>
+                    <button >
+                        <span class="material-symbols-outlined">
+                            minimize
+                        </span>
+                    </button>
+                </div>
+            </div> -->
+            
+        </div>
+        <p class="total"></p>
+        <button class="btn-buy">COMP</button>
+        <button class="btn-delete">VACIAR</button>
+            
+        
+    
+    </section>
 
+    <!-- <section class="hero">
+
+        
         <div class="slideshow-container">
 
             <div class="mySlides fade">
@@ -99,13 +134,14 @@
             
         </div>
            
-    </section>
-
+    </section> -->
+   
 <!-- <img src="./assets/img/cards/pelota.avif" alt=""> -->
 
     <section class="main">
-        
 
+            
+            
             <h2>PRODUCTOS</h2>
             <div class="categories">
                 <button class="category active">Todos</button>
@@ -123,7 +159,7 @@
                        <h4>KIT DISCOS</h4> 
                        <span>$4000</span>
                     </div>
-                    <div class="card-buttons ">
+                    <div class="card-buttons">
                        <button class="card-button"><p>AGREGAR AL CARRITO</p></button> 
                     </div>
                 </div> -->
@@ -190,7 +226,8 @@
             <a href="">📍 Argenina, San Juan, Rawson</a>
         </div>
     </section>
-    <script src="./assets/data.js"></script>
+    <div class="add-modal"></div>
+    <script src="../../assets/data.js"></script>
     <script src="./assets/index.js"></script>
 </body>
 </html>
