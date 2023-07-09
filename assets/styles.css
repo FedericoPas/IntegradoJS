@@ -206,7 +206,7 @@ header {
   gap: 20px;
   background-color: #ababab0f;
   padding: 20px;
-  border: 1px solid var(--electric);
+
   border-radius: 10px;
 }
 
@@ -251,14 +251,12 @@ header {
 }
 
 .up {
-  border: 1px solid var(--elect);
   background-color: rgb(89, 88, 82);  
   cursor: pointer;
 }
 
 .down {
   background-color: rgb(89, 88, 82);
-  border: 1px solid var(--electric);
   cursor: pointer;
 }
 
@@ -424,7 +422,7 @@ main {
   background: none;
   border: 1px solid var(--background-header);
   padding: 10px 35px;
-  color: var(--bg-white);
+  color: var(--primary);
   border-radius: 10px;
   cursor: pointer;
 }
