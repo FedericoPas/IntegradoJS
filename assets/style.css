@@ -422,14 +422,14 @@ a {
     width: 100%;
 }
 
-.card-button {
+.btn-add {
     width: 100%;
     border-radius: 3px;
     background-color: var(--background-header);
 
 }
 
-.card-button p {
+.btn-add p {
     padding: 7px;
     color: var(--primary);
 }
