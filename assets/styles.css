@@ -407,6 +407,9 @@ main {
 .btn-add {
   background: var(--primary);
 }
+.btn-add:hover {
+  border: 2px solid rgb(6, 1, 31);
+}
 
 .btn-buy,
 .btn-delete {

@@ -119,23 +119,28 @@ const applyFilter = ({ target }) => {
 };
 
 const toggleCart = () => {
-	cartMenu.classList.toggle("open-cart");
-	if (barsMenu.classList.contains("open-menu")) {
-		barsMenu.classList.remove("open-menu");
-		return;
+	if (cartMenu.classList.contains("open-cart")) {
+		cartMenu.classList.remove("open-cart")
+		cartMenu.classList.add("close-cart")
+		overlay.classList.remove("show-overlay")
+	} else if (!cartMenu.classList.contains("open-cart")){
+		cartMenu.classList.add("open-cart")
+		cartMenu.classList.remove("close-cart")
+		overlay.classList.add("show-overlay")
+		barsMenu.classList.remove("open-menu")
 	}
-	cartMenu.classList.toggle("close-cart");
-	overlay.classList.toggle("show-overlay");
 };
 
 const toggleMenu = () => {
-	barsMenu.classList.toggle("open-menu");
-	if (cartMenu.classList.contains("open-cart")) {
-		cartMenu.classList.remove("open-cart");
+	if (barsMenu.classList.contains("open-menu")) {
+		barsMenu.classList.remove("open-menu")
+		overlay.classList.remove("show-overlay")
+	} else if (!barsMenu.classList.contains("open-menu")) {
+		barsMenu.classList.add("open-menu")
+		overlay.classList.add("show-overlay")
+		cartMenu.classList.remove("open-cart")
 		cartMenu.classList.add("close-cart")
-		return;
 	}
-	overlay.classList.toggle("show-overlay");
 };
 
 const closeOnScroll = () => {
