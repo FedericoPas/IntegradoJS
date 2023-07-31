@@ -6,6 +6,12 @@
 }
 
 
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +28,13 @@
 
 
 
-
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-header);
+}
 /*header*/
 
 
@@ -304,6 +316,7 @@ main {
   color: white;
   width: 100%;
   overflow-x: hidden;
+  max-width: 1600px;
 }
 
 #products {
@@ -406,9 +419,13 @@ main {
   background: var(--primary);
 }
 .btn-add:hover {
-  border: 2px solid rgb(6, 1, 31);
+  background-color: rgb(42, 207, 42);
+  color: black;
+  transition: 0.4s;
 }
-
+.material-symbols-outlined{
+  cursor: pointer;
+}
 .btn-buy,
 .btn-delete {
   width: 100%;
@@ -422,9 +439,10 @@ main {
   background: none;
   border: 1px solid var(--background-header);
   padding: 10px 35px;
-  color: var(--primary);
+  color: var(--background-header);
   border-radius: 10px;
   cursor: pointer;
+  font-weight: 700;
 }
 
 
@@ -476,6 +494,7 @@ footer {
   padding: 30px 10px;
   background-color: var(--background-header);
   max-width: 1600px;
+  width: 100%;
 }
 
 footer h3 {
